@@ -5,7 +5,7 @@ import StepTwo from "./components/StepTwo";
 import StepThree from "./components/StepThree";
 
 const App = () => {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -91,7 +91,7 @@ const App = () => {
     <div className="md:flex md:justify-center md:items-center h-screen w-screen">
       <div className="relative md:static md:flex gap-8 bg-[hsl(206_94%_87%)] md:bg-white md:min-h-125 md:p-3 rounded-xl">
         <Sidebar step={currentStep} />
-        <div className="absolute md:static w-[90%] flex justify-center md:px-0 md:py-0 px-5 py-6 md:my-0 my-20 bg-white z-50 md:z-0 rounded-2xl">
+        <div className="absolute md:static w-[90%] md:translate-x-0 left-1/2 -translate-x-1/2 md:px-0 md:py-0 px-5 py-6 md:my-0 my-30 bg-white z-50 md:z-0 rounded-xl">
           {handleDisplay()}
         </div>
       </div>

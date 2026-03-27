@@ -3,7 +3,7 @@ import thanks from "../assets/images/icon-thank-you.svg";
 
 const StepThree = ({ formData }) => {
   return (
-    <div className="w-125 h-screen flex justify-center items-center ">
+    <div className="md:w-125 md:h-screen flex justify-center items-center ">
       <div className="text-center flex flex-col items-center">
         <img className="w-25 text-center" src={thanks} alt="" />
         <h1 className="text-2xl font-bold text-[hsl(213_96%_18%)]">
